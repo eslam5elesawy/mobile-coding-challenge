@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="3dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    >
+    <TextView
+        android:id="@+id/repository_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/repository_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/repository_name"/>
+
+<ImageView
+    android:id="@+id/owner_avatar"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginTop="8dp"
+    android:layout_below="@id/repository_description"/>
+
+    <TextView
+        android:id="@+id/owner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_toEndOf="@id/owner_avatar"
+        android:layout_below="@id/repository_description"/>
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/ic_baseline_star_24"
+    android:layout_toStartOf="@id/Stars"
+    android:layout_below="@id/owner_name"/>
+    <TextView
+        android:id="@+id/Stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@id/owner_name"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
